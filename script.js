@@ -3,8 +3,9 @@
 const button = document.getElementById('btn')
 const text = document.getElementById('text')
 const range = document.getElementById('range')
-const square = document.querySelector('#square')
-const eButton = document.getElementById('#e_btn')
+const square = document.querySelector('square')
+const eButton = document.getElementById('e_btn')
+const circle = document.getElementById('circle')
 
 
 const changeColor = function (event) { 
@@ -13,7 +14,6 @@ const changeColor = function (event) {
     text.value = '';
     text.focus();
 }
-
  
 button.addEventListener('click', changeColor)
 
@@ -21,10 +21,11 @@ const buttonStyle = function () {
     eButton.style = "display:none;"
 }
 
-// const rangeChange = function(event) {
+const rangeChange = function(event) {
+    
+    circle.textContent = event.target.value
+}
 
-// }
-
-// range.addEventListener('input', rangeChange)
+range.addEventListener('input', rangeChange)
 
 
