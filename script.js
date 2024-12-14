@@ -17,7 +17,7 @@ const changeColor = function (event) {
 button.addEventListener('click', changeColor)
 
 const buttonStyle = function () {
-    eButton.style = "display:none;"
+    eButton.style.display = "none";
 };
 
 eButton.addEventListener('click', buttonStyle)
