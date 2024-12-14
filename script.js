@@ -11,7 +11,7 @@ const changeColor = function (event) {
    
     square.style.backgroundColor = text.value;
     text.value = '';
-    text.focus();
+    
 };
 
 button.addEventListener('click', changeColor)
